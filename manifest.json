@@ -1,7 +1,7 @@
 {
   "name": "smslink",
-  "vendor": "vtex",
-  "version": "0.3.0",
+  "vendor": "infinityro",
+  "version": "0.0.0",
   "title": "SMSLink",
   "description": "This application allows the sending of transactional SMS messages to customers using SMSLink SMS Gateway",
   "categories": [],
@@ -190,10 +190,7 @@
         "decription": "The <message> string can only contain: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*()_+--+=;:,.<>/?[]{}|^~\\\"'` and \r (carriage return), \n (line feed), \t (tab)."
       }
     },
-    "required": [
-      "connectionID",
-      "password"
-    ]
+    "required": ["connectionID", "password"]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

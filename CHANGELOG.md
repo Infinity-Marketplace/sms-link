@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Switched to infinityro vendor
+
 ## [0.3.0] - 2023-04-26
 
 - Added {delivery_date} as optional variable in SMS messages. This is the date when the order will be delivered. 

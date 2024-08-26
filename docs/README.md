@@ -7,7 +7,7 @@ This app handles events sent by the app `vtex.orders-broadcast` and `vtex.return
 ## Installation Guide
 
 Open the VTEX App Store and install this app on your store, or run the following command on VTEX toolbelt:
-`vtex install vtex.smslink@0.x`
+`vtex install infinityro.smslink@0.x`
 
 ## Setup
 
