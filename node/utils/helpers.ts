@@ -39,19 +39,38 @@ export const isMessageValid = (message: string) => {
   )
 }
 
-export const formatMessage = (message: string, data: any, type = 'order') => {
+export const formatMessage = (
+  message: string,
+  data: any,
+  type = 'order',
+  addOneDayToDeliveryDate = false
+) => {
   let newMessage = message
 
   const { creationDate } = data
   const estimateDays = data.shippingData?.logisticsInfo?.[0]?.shippingEstimate
-  const estimateDate = data.shippingData?.logisticsInfo?.[0]?.shippingEstimateDate
+  const estimateDate =
+    data.shippingData?.logisticsInfo?.[0]?.shippingEstimateDate
 
-  let deliveryDate = estimateDate ? new Date(estimateDate) : new Date(creationDate)
+  const deliveryDate = estimateDate
+    ? new Date(estimateDate)
+    : new Date(creationDate)
+
   if (!estimateDate) {
-    deliveryDate.setDate(deliveryDate.getDate() + Number(String(estimateDays)?.replace(/\D/g, '')))
+    deliveryDate.setDate(
+      deliveryDate.getDate() + Number(String(estimateDays)?.replace(/\D/g, ''))
+    )
   }
 
-  const formattedDeliveryDate = new Intl.DateTimeFormat('ro-RO', { day: "numeric", month: "long", year: "numeric" }).format(deliveryDate)
+  if (addOneDayToDeliveryDate) {
+    deliveryDate.setDate(deliveryDate.getDate() + 1)
+  }
+
+  const formattedDeliveryDate = new Intl.DateTimeFormat('ro-RO', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(deliveryDate)
 
   if (type === 'order') {
     newMessage = newMessage
