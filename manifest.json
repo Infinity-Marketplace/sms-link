@@ -25,6 +25,9 @@
       "name": "colossus-write-logs"
     },
     {
+      "name": "read-workspace-apps"
+    },
+    {
       "name": "outbound-access",
       "attrs": {
         "host": "{{account}}.vtexcommercestable.com.br",
@@ -110,6 +113,12 @@
         "default": "Order {order_id} payment authorized",
         "pattern": "[a-zA-Z0-9 \\!\\@\\#\\$\\%\\&\\*\\(\\)\\_\\+\\-\\=\\;\\:\\,\\.\\<\\>\\/\\?\\[\\]\\{\\}\\|\\^\\~\\\\\"\\'\\`\\{\\}\\\r\\\n\\\t]$",
         "description": "The <message> string can only contain: abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*()_+--+=;:,.<>/?[]{}|^~\\\"'` and \r (carriage return), \n (line feed), \t (tab)."
+      },
+      "addOneDayToDeliveryDate": {
+        "title": "Add one day to delivery date",
+        "type": "boolean",
+        "default": false,
+        "description": "Checking this will add one day to the `shippingEstimateDate`/`shippingEstimate`."
       },
       "allowPaymentErrorSMS": {
         "title": "Send Online payment error SMS",

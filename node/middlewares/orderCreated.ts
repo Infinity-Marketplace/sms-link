@@ -24,7 +24,12 @@ export async function orderCreated(
       const order = await oms.order(ctx.body.orderId)
 
       if (order != null) {
-        const message = formatMessage(settings.orderReceivedText, order)
+        const message = formatMessage(
+          settings.orderReceivedText,
+          order,
+          'order',
+          settings.addOneDayToDeliveryDate
+        )
 
         // Send message to user
         await sms.sendJsonMessage({
@@ -49,6 +54,6 @@ export async function orderCreated(
       })
     }
   }
-  
+
   await next()
 }

@@ -7,17 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- One day to delivery day configurable via app settings
+
 ### Changed
 
 - Switched to infinityro vendor
 
 ## [0.3.0] - 2023-04-26
 
-- Added {delivery_date} as optional variable in SMS messages. This is the date when the order will be delivered. 
+- Added {delivery_date} as optional variable in SMS messages. This is the date when the order will be delivered.
 
 ## [0.2.3] - 2023-02-03
 
- - added ListOrders to the policies
+- added ListOrders to the policies
 
 ## [0.2.1] - 2021-12-13
 
