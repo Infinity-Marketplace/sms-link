@@ -1,7 +1,7 @@
 {
   "name": "smslink",
   "vendor": "infinityro",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "SMSLink",
   "description": "This application allows the sending of transactional SMS messages to customers using SMSLink SMS Gateway",
   "categories": [],
