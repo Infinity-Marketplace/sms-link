@@ -25,9 +25,6 @@
       "name": "colossus-write-logs"
     },
     {
-      "name": "read-write-apps-settings"
-    },
-    {
       "name": "read-workspace-apps"
     },
     {
