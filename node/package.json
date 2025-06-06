@@ -4,22 +4,27 @@
     "ramda": "^0.25.0",
     "splunk-events": "^1.2.3",
     "axios": "^0.18.0",
-    "@vtex/api": "6.47.0",
+    "@vtex/api": "6.48.0",
     "@vtex/clients": "^2.17.0"
   },
   "devDependencies": {
     "@types/co-body": "^0.0.3",
     "@types/jest": "^24.0.18",
     "@types/koa": "^2.0.39",
-    "@types/node": "^12.0.0",
+    "@types/node": "^20.0.0",
     "@types/ramda": "types/npm-ramda#dist",
-    "@vtex/api": "6.47.0",
+    "@vtex/api": "6.48.0",
     "@vtex/test-tools": "^1.0.0",
     "@vtex/tsconfig": "^0.5.6",
     "tslint": "^5.14.0",
     "tslint-config-vtex": "^2.1.0",
-    "typescript": "3.9.7",
+    "typescript": "5.5.3",
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide"
+  },
+  "resolutions": {
+    "@types/testing-library__dom": "6.12.1",
+    "@types/express": "4.16.0",
+    "@types/express-serve-static-core": "4.16.0"
   },
   "scripts": {
     "lint": "tsc --noEmit --pretty && tslint -c tslint.json --fix './**/*.ts'"

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- Node builder version from `6.x` to `7.x`
+
+### Removed
+
+- Unused `messages` builder
+
 ## [0.0.1] - 2024-09-05
 
 ### Added
@@ -16,27 +24,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 
 - Switched to infinityro vendor
-
-## [0.3.0] - 2023-04-26
-
-- Added {delivery_date} as optional variable in SMS messages. This is the date when the order will be delivered.
-
-## [0.2.3] - 2023-02-03
-
-- added ListOrders to the policies
-
-## [0.2.1] - 2021-12-13
-
-## [0.2.1] - 2021-03-05
-
-## [0.2.0] - 2021-03-05
-
-## [0.1.0] - 2020-07-22
-
-## [0.0.3] - 2020-07-13
-
-## [0.0.2] - 2020-07-13
-
-### Changed
-
-- Add first version of docs

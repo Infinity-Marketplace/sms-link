@@ -9,9 +9,8 @@
     "vtex.styleguide": "9.x"
   },
   "builders": {
-    "node": "6.x",
-    "docs": "0.x",
-    "messages": "1.x"
+    "node": "7.x",
+    "docs": "0.x"
   },
   "scripts": {
     "prereleasy": "bash lint.sh"
